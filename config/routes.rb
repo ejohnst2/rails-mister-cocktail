@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'hello_world', to: 'hello_world#index'
   resources :cocktails do
       resources :doses, only: [ :delete, :new, :create ]
   end
