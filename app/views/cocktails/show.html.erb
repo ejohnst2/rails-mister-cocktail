@@ -2,7 +2,7 @@
 
 <div class="banner-content">
   <% if @cocktail.photo? %>
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= cl_image_path @cocktail.photo.path, height: 300, width: 400, crop: :fill %>');">
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= cl_image_path cocktail_url(@cocktail), height: 300, width: 400, crop: :fill %>');">
   <% end %>
 <div class="container">
   <h1 class="cocktail-title"><%= @cocktail.name %></h1>
