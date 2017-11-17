@@ -1,4 +1,4 @@
-class CreateCocktails < ActiveRecord::Migration[5.1]
+class CreateCocktails < ActiveRecord::Migrations
   def change
     create_table :cocktails do |t|
       t.string :name

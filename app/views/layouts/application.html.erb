@@ -7,9 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= cloudinary_js_config %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+  <div class="navbar-wagon">
+    <a href="/" class="navbar-wagon-brand">
+      <img src="http://static1.squarespace.com/static/57ef7a1bb3db2ba633382568/t/57f156c4440243ec5f50693f/1508815767342/?format=1500w" alt="logo">
+    </a>
+
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <%= link_to "Home", cocktails_path, :class=>"navbar-wagon-item navbar-wagon-link" %>
+  <!--     <a href="" class="navbar-wagon-item navbar-wagon-link">Home</a>
+      <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
+      <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a> -->
+    </div>
+  </div>
+    <body>
+      <%= yield %>
+    </body>
+  <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fa fa-heart"></i> at Le Wagon
+  </div>
+</div>
+
+
+
 </html>
+
