@@ -8,7 +8,7 @@
 
 puts 'Creating 10 ingredients...'
 
-10.times do
+30.times do
   ingredient = Ingredient.create(name: Faker::Food.ingredient)
 end
 
